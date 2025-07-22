@@ -75,7 +75,7 @@ title: Our Team
 ```
 
 ### `section-divider`
-Clean section divider layout for marking transitions between presentation sections. Features centered content without content mask overlay.
+Clean section divider layout for marking transitions between presentation sections. Features centered content with a compact horizontal section mask for improved readability.
 
 ```yaml
 ---

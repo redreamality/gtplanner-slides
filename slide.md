@@ -12,7 +12,7 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
-layout: section-divider
+layout: cover
 ---
 
 # GTPlanner
@@ -28,6 +28,13 @@ layout: section-divider
 -->
 
 ---
+layout: section-divider
+title: ""
+---
+
+## 开场问题：思想，与工具的形态
+
+---
 layout: two-column
 title: "思想，与工具的形态"
 ---
@@ -36,22 +43,23 @@ title: "思想，与工具的形态"
 <img src="/pictures/image_02.png" alt="思想与工具的矛盾" />
 
 ::right::
-## 当思想的深度超越了工具的表达能力，创造便成为一种挣扎
 
-- 工具与思想的关系：一个永恒的矛盾
-- 历史规律：思想深度超越工具形态时的挣扎
-- 当下困境：
-  - 我们都是领域思想者
-  - 复杂模型与洞见难以固化
-  - 现有创造范式如"石锤"般笨拙
+- 工具与思想：一个永恒的矛盾
+- 创造的困境：
+  - **思想的深度**与**工具的形态**不匹配
+  - 创作者必须先成为**工具的掌握者**
+  - 音乐家需要精通乐谱，画家需要掌握技法，软件开发需要学会编程
+  - 工具的门槛阻隔了思想的表达
+
+## Agent的构建中，这种矛盾尤为突出
 
 <!--
-演讲者说: "我们一直在思考一个问题：工具与思想的关系。在人类历史中，当思想的深度，超越了当时工具所能承载的形态时，创造便成为一种充满阻力的挣扎。今天，我们每个人都是自己领域的思想者，我们脑中有无数复杂的模型和洞见。但将这些无形的思想，固化为有形的、可执行的工具时，我们发现，我们手中的'石锤'——也就是现有的创造范式——显得过于笨拙了。"
+演讲者说: "让我们思考一个根本性问题：工具与思想的关系。在人类历史长河中，每当思想的深度超越了工具所能承载的形态，创造就会变成一种挣扎。这种挣扎在今天尤为明显。一个音乐家在脑海中构思了一首交响乐，但要把它变成现实，必须先掌握作曲技法；一个画家心中有绝妙的构图，但要表达出来，必须先精通绘画技巧；一个企业家有创新的商业模式，但要实现它，往往需要先学会编程。这种必须先成为'工具工匠'才能成为'创作者'的范式，让许多宝贵的创意被工具的门槛阻隔在了现实之外。这种工具形态与思想深度之间的鸿沟，正是我们今天要探讨的核心问题。"
 -->
 
 ---
 layout: two-column
-title: "回到构建的本质"
+title: "回到Agent构建的本质"
 ---
 
 ::left::
@@ -106,9 +114,6 @@ title: "从创造「工具」到创造「可能性」"
 
 这个系统，我们称之为 **The Agent Builder**。
 
-<div class="p-6 bg-blue-50 rounded-lg mt-6">
-理解了本质，我们的探索方向也变得清晰。我们发现，交付一个现成的、一次性的工具，价值是有限的。因为它只是一个"事物"。而一个能够持续生成、演化新工具的"系统"，才真正蕴含着"可能性"。
-</div>
 
 <!--
 演讲者说: "理解了本质，我们的探索方向也变得清晰。我们发现，交付一个现成的、一次性的工具，价值是有限的。因为它只是一个'事物'。而一个能够持续生成、演化新工具的'系统'，才真正蕴含着'可能性'。我们把这个探索方向，命名为 The Agent Builder。它不是一个产品，而是我们构建的一个思想框架，一个持续生长的系统。"
@@ -134,9 +139,9 @@ title: "系统，而非工具"
 <h3 class="text-base font-bold mb-1 text-red-700">工具</h3>
 <div class="text-red-600 font-semibold mb-2 text-xs">价值在使用中消耗</div>
 <ul class="text-left space-y-0.5 text-gray-700 text-xs">
-<li>• 一次性价值交付</li>
-<li>• 无法内化个人知识</li>
-<li>• 通用但不深入</li>
+<li>一次性价值交付</li>
+<li>无法内化个人知识</li>
+<li>通用但不深入</li>
 </ul>
 </div>
 
@@ -144,9 +149,9 @@ title: "系统，而非工具"
 <h3 class="text-base font-bold mb-1 text-green-700">系统</h3>
 <div class="text-green-600 font-semibold mb-2 text-xs">价值在构建中沉淀</div>
 <ul class="text-left space-y-0.5 text-gray-700 text-xs">
-<li>• 时间的复利效应</li>
-<li>• 内化独特知识体系</li>
-<li>• 成为思想的延伸</li>
+<li>时间的复利效应</li>
+<li>内化独特知识体系</li>
+<li>成为思想的延伸</li>
 </ul>
 </div>
 </div>
@@ -352,9 +357,9 @@ title: "如何同行"
 <h3 class="text-lg font-bold mb-2 text-blue-700">Tools</h3>
 <p class="text-gray-600 mb-3 font-medium text-sm">打造更强的武器库</p>
 <ul class="text-left space-y-1 text-gray-600 text-sm">
-<li>• VS Code插件</li>
-<li>• 生态集成</li>
-<li>• 更多高质量工具集</li>
+<li>VS Code插件</li>
+<li>生态集成</li>
+<li>更多高质量工具集</li>
 </ul>
 </div>
 
@@ -363,9 +368,9 @@ title: "如何同行"
 <h3 class="text-lg font-bold mb-2 text-green-700">Benchmarks</h3>
 <p class="text-gray-600 mb-3 font-medium text-sm">定义"好"的标准</p>
 <ul class="text-left space-y-1 text-gray-600 text-sm">
-<li>• 评估数据集</li>
-<li>• 评测方法</li>
-<li>• 度量标准</li>
+<li>评估数据集</li>
+<li>评测方法</li>
+<li>度量标准</li>
 </ul>
 </div>
 
@@ -374,9 +379,9 @@ title: "如何同行"
 <h3 class="text-lg font-bold mb-2 text-purple-700">Showcases</h3>
 <p class="text-gray-600 mb-3 font-medium text-sm">分享您的创造</p>
 <ul class="text-left space-y-1 text-gray-600 text-sm">
-<li>• 应用案例</li>
-<li>• 实践教程</li>
-<li>• 分享视频</li>
+<li>应用案例</li>
+<li>实践教程</li>
+<li>分享视频</li>
 </ul>
 </div>
 </div>
