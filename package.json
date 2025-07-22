@@ -1,0 +1,44 @@
+{
+  "name": "slidev-theme-opensqz-theme",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A custom Slidev theme for OpenSQZ with content and people page layouts",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "opensqz",
+    "presentation"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "slidev": ">=0.48.0"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md --open",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png"
+  },
+  "dependencies": {
+    "@slidev/types": "^52.0.0"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.0.0"
+  },
+  "//": "Learn more: https://sli.dev/guide/write-theme.html",
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "fonts": {
+        "sans": "Inter, system-ui, sans-serif",
+        "mono": "Fira Code, monospace"
+      },
+      "aspectRatio": "16/9",
+      "canvasWidth": 980,
+      "themeConfig": {
+        "primary": "#1e40af",
+        "secondary": "#3b82f6"
+      }
+    }
+  }
+}
