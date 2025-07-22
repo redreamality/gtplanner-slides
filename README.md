@@ -74,6 +74,20 @@ title: Our Team
 />
 ```
 
+### `section-divider`
+Clean section divider layout for marking transitions between presentation sections. Features centered content without content mask overlay.
+
+```yaml
+---
+layout: section-divider
+title: "Section Title"
+---
+
+# New Section
+
+This marks the beginning of a new section in your presentation.
+```
+
 ## Components
 
 This theme provides the following components:

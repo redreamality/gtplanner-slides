@@ -1,6 +1,6 @@
 ---
 theme: ./
-title: GTPlanner开源发布会
+# title: GTPlanner开源发布会
 info: |
   ## GTPlanner开源发布会（思辨版）
 
@@ -12,53 +12,53 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
+layout: section-divider
 ---
 
 # GTPlanner
 
 ## The Agent Builder 核心规划引擎
-
+<!-- 
 <div class="pt-12">
 <span class="text-sm opacity-75">感易智能</span>
-</div>
+</div> -->
 
 <!--
 演讲者说: (语气平静，语速稍慢) "大家好。今天，我们不发布一款产品，而是想和各位探讨一个问题，并分享我们为了解答这个问题，所迈出的第一步。这一步，我们称之为GTPlanner。"
 -->
 
 ---
-layout: title-content
+layout: two-column
 title: "思想，与工具的形态"
 ---
 
-<div class="flex items-center justify-center h-full">
-<div class="text-center">
-<img src="/pictures/image_02.png" alt="思想与工具的矛盾" class="mx-auto mb-8 max-w-md" />
+::left::
+<img src="/pictures/image_02.png" alt="思想与工具的矛盾" />
 
-<h2 class="text-2xl font-bold mb-6">当思想的深度超越了工具的表达能力，创造便成为一种挣扎</h2>
+::right::
+## 当思想的深度超越了工具的表达能力，创造便成为一种挣扎
 
-<div class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-<p>我们一直在思考一个问题：工具与思想的关系。在人类历史中，当思想的深度，超越了当时工具所能承载的形态时，创造便成为一种充满阻力的挣扎。</p>
-
-<p class="mt-4">今天，我们每个人都是自己领域的思想者，我们脑中有无数复杂的模型和洞见。但将这些无形的思想，固化为有形的、可执行的工具时，我们发现，我们手中的"石锤"——也就是现有的创造范式——显得过于笨拙了。</p>
-</div>
-</div>
-</div>
+- 工具与思想的关系：一个永恒的矛盾
+- 历史规律：思想深度超越工具形态时的挣扎
+- 当下困境：
+  - 我们都是领域思想者
+  - 复杂模型与洞见难以固化
+  - 现有创造范式如"石锤"般笨拙
 
 <!--
 演讲者说: "我们一直在思考一个问题：工具与思想的关系。在人类历史中，当思想的深度，超越了当时工具所能承载的形态时，创造便成为一种充满阻力的挣扎。今天，我们每个人都是自己领域的思想者，我们脑中有无数复杂的模型和洞见。但将这些无形的思想，固化为有形的、可执行的工具时，我们发现，我们手中的'石锤'——也就是现有的创造范式——显得过于笨拙了。"
 -->
 
 ---
-layout: title-content
+layout: two-column
 title: "回到构建的本质"
 ---
 
-<div class="flex items-center justify-center h-full">
-<div class="w-full max-w-4xl">
-<img src="/pictures/image_03.png" alt="第一性原理信息图" class="mx-auto mb-8 max-w-full" />
+::left::
+<img src="/pictures/image_03.png" alt="第一性原理信息图" />
 
-<div class="grid grid-cols-2 gap-8 text-center">
+::right::
+<div class="space-y-6">
 <div class="bg-gray-50 p-6 rounded-lg">
 <h3 class="text-xl font-bold mb-4">核心公式</h3>
 <div class="space-y-2 text-lg">
@@ -69,14 +69,12 @@ title: "回到构建的本质"
 
 <div class="bg-gray-50 p-6 rounded-lg">
 <h3 class="text-xl font-bold mb-4">上下文四要素</h3>
-<div class="space-y-2">
-<div>• 任务 (Task) - 做什么</div>
-<div>• 工具 (Tools) - 用什么</div>
-<div>• 参考文件 (Reference) - 参考什么</div>
-<div>• 输出格式 (Format) - 得到什么</div>
-</div>
-</div>
-</div>
+<ul class="space-y-2 text-left">
+<li>任务 (Task) - 做什么</li>
+<li>工具 (Tools) - 用什么</li>
+<li>参考文件 (Reference) - 参考什么</li>
+<li>输出格式 (Format) - 得到什么</li>
+</ul>
 </div>
 </div>
 
@@ -85,28 +83,31 @@ title: "回到构建的本质"
 -->
 
 ---
-layout: title-content
-title: "我们探索的方向：从创造"事物"，到创造"可能性""
+layout: section-divider
+title: ""
 ---
 
-<div class="flex items-center justify-center h-full">
-<div class="text-center">
-<img src="/pictures/image_04.png" alt="可能性之树" class="mx-auto mb-8 max-w-lg" />
+## Part 1: 回到起点
 
-<div class="max-w-3xl mx-auto">
-<h2 class="text-2xl font-bold mb-6">The Agent Builder</h2>
+---
+layout: two-column
+title: "从创造「工具」到创造「可能性」"
+---
 
-<div class="text-lg text-gray-700 space-y-4">
-<p>我们不旨在交付一个现成的工具。</p>
-<p class="text-blue-600 font-semibold">我们旨在构建一个能够生成工具的系统。</p>
-<p>这个系统，我们称之为 <strong>The Agent Builder</strong>。</p>
-</div>
+::left::
+<img src="/pictures/image_04.png" alt="可能性之树" />
 
-<div class="mt-8 p-6 bg-blue-50 rounded-lg">
-<p class="text-gray-600">理解了本质，我们的探索方向也变得清晰。我们发现，交付一个现成的、一次性的工具，价值是有限的。因为它只是一个"事物"。而一个能够持续生成、演化新工具的"系统"，才真正蕴含着"可能性"。</p>
-</div>
-</div>
-</div>
+::right::
+## The Agent Builder
+
+我们不旨在交付一个现成的工具。
+
+**我们旨在构建一个能够生成工具的系统。**
+
+这个系统，我们称之为 **The Agent Builder**。
+
+<div class="p-6 bg-blue-50 rounded-lg mt-6">
+理解了本质，我们的探索方向也变得清晰。我们发现，交付一个现成的、一次性的工具，价值是有限的。因为它只是一个"事物"。而一个能够持续生成、演化新工具的"系统"，才真正蕴含着"可能性"。
 </div>
 
 <!--
@@ -114,18 +115,24 @@ title: "我们探索的方向：从创造"事物"，到创造"可能性""
 -->
 
 ---
-layout: title-content
+layout: two-column
 title: "系统，而非工具"
 ---
 
-<div class="flex items-center justify-center h-full">
-<div class="w-full max-w-4xl">
-<img src="/pictures/image_05.png" alt="系统与工具的对比" class="mx-auto mb-8 max-w-full" />
+::left::
 
-<div class="grid grid-cols-2 gap-8">
-<div class="text-center p-6 bg-red-50 rounded-lg">
-<h3 class="text-xl font-bold mb-4 text-red-700">工具</h3>
-<p class="text-red-600 font-semibold mb-4">价值在使用中被消耗</p>
+<div class="flex items-center justify-center h-full">
+<img src="/pictures/image_05.png" alt="系统与工具的对比" class="w-full max-w-md h-auto object-contain" />
+</div>
+
+::right::
+
+<div class="flex flex-col justify-center h-full space-y-8">
+
+<div class="grid grid-cols-1 gap-6">
+<div class="text-center p-6 bg-red-50 rounded-lg border-l-4 border-red-500">
+<h3 class="text-xl font-bold mb-3 text-red-700">工具</h3>
+<div class="text-red-600 font-semibold mb-4">价值在使用中消耗</div>
 <ul class="text-left space-y-2 text-gray-700">
 <li>• 一次性价值交付</li>
 <li>• 无法内化个人知识</li>
@@ -133,9 +140,9 @@ title: "系统，而非工具"
 </ul>
 </div>
 
-<div class="text-center p-6 bg-green-50 rounded-lg">
-<h3 class="text-xl font-bold mb-4 text-green-700">系统</h3>
-<p class="text-green-600 font-semibold mb-4">价值在构建中沉淀</p>
+<div class="text-center p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
+<h3 class="text-xl font-bold mb-3 text-green-700">系统</h3>
+<div class="text-green-600 font-semibold mb-4">价值在构建中沉淀</div>
 <ul class="text-left space-y-2 text-gray-700">
 <li>• 时间的复利效应</li>
 <li>• 内化独特知识体系</li>
@@ -144,10 +151,10 @@ title: "系统，而非工具"
 </div>
 </div>
 
-<div class="mt-8 p-6 bg-gray-100 rounded-lg">
-<p class="text-center text-gray-700">一个通用的工具无法内化你独特的知识体系，而一个由你亲手构建的系统可以。</p>
+<div class="p-6 bg-blue-50 rounded-lg border border-blue-200">
+<p class="text-center text-gray-700 font-medium">一个通用的工具无法内化你独特的知识体系，<br/>而一个由你亲手构建的系统可以。</p>
 </div>
-</div>
+
 </div>
 
 <!--
@@ -155,42 +162,48 @@ title: "系统，而非工具"
 -->
 
 ---
-layout: title-content
+layout: two-column
 title: "为思想者，而非（传统）开发者"
 ---
 
+::left::
 <div class="flex items-center justify-center h-full">
-<div class="text-center">
-<img src="/pictures/image_06.png" alt="思想的冰山" class="mx-auto mb-8 max-w-md" />
-
-<div class="max-w-3xl mx-auto">
-<div class="grid grid-cols-2 gap-8 mb-8">
-<div class="p-6 bg-blue-50 rounded-lg">
-<h3 class="text-lg font-bold mb-3 text-blue-700">水面之上</h3>
-<p class="text-blue-600">通用需求</p>
-<p class="text-sm text-gray-600 mt-2">显性的、共通的需求</p>
+<img src="/pictures/image_06.png" alt="思想的冰山" class="w-full max-w-sm h-auto object-contain" />
 </div>
 
-<div class="p-6 bg-purple-50 rounded-lg">
-<h3 class="text-lg font-bold mb-3 text-purple-700">水面之下</h3>
-<p class="text-purple-600">个性化知识</p>
-<p class="text-sm text-gray-600 mt-2">各领域专家的隐性知识</p>
+::right::
+<div class="flex flex-col justify-center h-full space-y-6">
+
+<div class="grid grid-cols-1 gap-4 mb-6">
+<div class="p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+<h3 class="text-xl font-bold mb-3 text-blue-700">水面之上</h3>
+<p class="text-blue-600 font-semibold text-lg">通用需求</p>
+<p class="text-gray-600 mt-2">显性的、共通的需求</p>
+</div>
+
+<div class="p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+<h3 class="text-xl font-bold mb-3 text-purple-700">水面之下</h3>
+<p class="text-purple-600 font-semibold text-lg">个性化知识</p>
+<p class="text-gray-600 mt-2">各领域专家的隐性知识</p>
 </div>
 </div>
 
-<div class="text-lg text-gray-700 space-y-4">
-<p>我们的关注点，是水面下那座巨大的冰山——那些存在于各个领域专家头脑中的，隐性、个性化的知识。</p>
+<div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+<p class="text-gray-700 font-medium text-center leading-relaxed">
+我们的关注点，是水面下那座巨大的冰山——<br/>
+那些存在于各个领域专家头脑中的，<br/>
+隐性、个性化的知识。
+</p>
+</div>
 
-<div class="flex justify-center space-x-6 mt-6">
-<span class="text-2xl">⚖️</span>
-<span class="text-2xl">🩺</span>
-<span class="text-2xl">📊</span>
-<span class="text-2xl">🔬</span>
-<span class="text-2xl">🎨</span>
+<div class="flex justify-center space-x-8 mt-4">
+<span class="text-3xl">⚖️</span>
+<span class="text-3xl">🩺</span>
+<span class="text-3xl">📊</span>
+<span class="text-3xl">🔬</span>
+<span class="text-3xl">🎨</span>
 </div>
-</div>
-</div>
-</div>
+
 </div>
 
 <!--
@@ -198,43 +211,63 @@ title: "为思想者，而非（传统）开发者"
 -->
 
 ---
-layout: title-content
+layout: section-divider
+title: ""
+---
+
+## Part 2: 我们的探索与实践
+
+---
+layout: two-column
 title: "回到原点：GTPlanner"
 ---
 
-<div class="flex items-center justify-center h-full">
-<div class="w-full max-w-4xl">
-<img src="/pictures/image_07.png" alt="GTPlanner的三件事" class="mx-auto mb-8 max-w-full" />
+::left::
 
-<div class="mb-8 text-center">
-<h2 class="text-2xl font-bold mb-4">回顾：Agent = 流程 (Flow) + 上下文 (Context)</h2>
+<div class="flex flex-col justify-center h-full space-y-8">
+
+<div class="text-center">
+<h2 class="text-2xl font-bold mb-4 text-gray-800">回顾：Agent = 流程 (Flow) + 上下文 (Context)</h2>
 <p class="text-lg text-gray-600">GTPlanner 尝试回答3个基本问题</p>
 </div>
 
-<div class="grid grid-cols-3 gap-6 mb-8">
-<div class="text-center p-6 bg-blue-50 rounded-lg">
+<div class="grid grid-cols-1 gap-6">
+<div class="text-center p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
 <div class="text-3xl mb-4">💬</div>
-<h3 class="text-lg font-bold mb-2">1. 澄清需求</h3>
+<h3 class="text-lg font-bold mb-3 text-blue-700">1. 澄清需求</h3>
 <p class="text-gray-600">你的真实意图是什么？</p>
 </div>
 
-<div class="text-center p-6 bg-green-50 rounded-lg">
+<div class="text-center p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
 <div class="text-3xl mb-4">🔧</div>
-<h3 class="text-lg font-bold mb-2">2. 梳理资源</h3>
+<h3 class="text-lg font-bold mb-3 text-green-700">2. 梳理资源</h3>
 <p class="text-gray-600">实现它，需要哪些已知和未知？</p>
 </div>
 
-<div class="text-center p-6 bg-purple-50 rounded-lg">
+<div class="text-center p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
 <div class="text-3xl mb-4">📋</div>
-<h3 class="text-lg font-bold mb-2">3. 生成规划</h3>
+<h3 class="text-lg font-bold mb-3 text-purple-700">3. 生成规划</h3>
 <p class="text-gray-600">第一步的行动路径是什么？</p>
 </div>
 </div>
 
-<div class="border-t-2 border-gray-300 pt-6">
-<p class="text-center text-gray-600 italic">我们试图回归构建的本质，让创造的过程摆脱对复杂框架的依赖，回到对"流程"的思考和对"上下文"的组织。</p>
 </div>
+
+::right::
+
+<div class="flex flex-col justify-center h-full space-y-6">
+
+<div class="flex items-center justify-center">
+<img src="/pictures/image_07.png" alt="GTPlanner的三件事" class="w-full max-w-xs h-auto object-contain" />
 </div>
+
+<div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
+<p class="text-center text-gray-700 italic leading-relaxed">
+我们试图回归构建的本质，让创造的过程摆脱对复杂框架的依赖，<br/>
+回到对"流程"的思考和对"上下文"的组织。
+</p>
+</div>
+
 </div>
 
 <!--
@@ -251,57 +284,7 @@ title: "理论的实践"
 <div class="text-center mb-8">
 <h2 class="text-2xl font-bold mb-4">眼见为实</h2>
 <p class="text-lg text-gray-600">这些思考并非空想，我们已经将这套原则应用于具体场景</p>
-</div>
-
-<div class="grid grid-cols-2 gap-8">
-<div class="bg-white p-6 rounded-lg shadow-lg border">
-<h3 class="text-xl font-bold mb-4 text-blue-700">智能投研助手</h3>
-<div class="space-y-3 text-sm">
-<div class="bg-gray-50 p-3 rounded">
-<strong>用户输入：</strong>"分析一下最近A公司的财报"
-</div>
-<div class="text-center text-gray-400">↓ GTPlanner 对话追问</div>
-<div class="bg-blue-50 p-3 rounded">
-<strong>澄清问题：</strong>
-<ul class="mt-2 space-y-1">
-<li>• 需要关注哪些财务指标？</li>
-<li>• 与哪家竞品对比？</li>
-<li>• 分析的时间范围？</li>
-</ul>
-</div>
-<div class="text-center text-gray-400">↓</div>
-<div class="bg-green-50 p-3 rounded">
-<strong>生成规划：</strong>结构化的分析任务列表
-</div>
-</div>
-</div>
-
-<div class="bg-white p-6 rounded-lg shadow-lg border">
-<h3 class="text-xl font-bold mb-4 text-purple-700">医疗报告自动解读</h3>
-<div class="space-y-3 text-sm">
-<div class="bg-gray-50 p-3 rounded">
-<strong>输入：</strong>非结构化的医疗影像报告
-</div>
-<div class="text-center text-gray-400">↓ GTPlanner 规划</div>
-<div class="bg-purple-50 p-3 rounded">
-<strong>执行流程：</strong>
-<ul class="mt-2 space-y-1">
-<li>• 关键信息提取</li>
-<li>• 异常指标识别</li>
-<li>• 生成初步摘要</li>
-<li>• 风险评估建议</li>
-</ul>
-</div>
-<div class="text-center text-gray-400">↓</div>
-<div class="bg-green-50 p-3 rounded">
-<strong>输出：</strong>结构化的医疗报告解读
-</div>
-</div>
-</div>
-</div>
-
-<div class="mt-8 p-6 bg-yellow-50 rounded-lg">
-<p class="text-center text-gray-700">这些实践帮助我们验证、也修正了我们的想法。它们证明了，回归本质的规划，在真实世界中是可行且有价值的。</p>
+<p class="text-lg text-gray-600">[视频placeholder]</p>
 </div>
 </div>
 </div>
@@ -311,27 +294,30 @@ title: "理论的实践"
 -->
 
 ---
-layout: title-content
+layout: section-divider
+title: ""
+---
+
+## Part 3: 邀请与结语
+
+---
+layout: two-column
 title: "为何开源"
 ---
 
-<div class="flex items-center justify-center h-full">
-<div class="text-center">
-<img src="/pictures/image_09.png" alt="未完成的地图" class="mx-auto mb-8 max-w-lg" />
+::left::
+<img src="/pictures/image_09.png" alt="未完成的地图" />
 
-<div class="max-w-3xl mx-auto">
-<div class="text-lg text-gray-700 space-y-6">
-<p class="text-xl font-semibold">我们绘制的，只是一张草图。</p>
-<p>真正的世界地图，需要所有探索者共同完成。</p>
-<p class="text-blue-600 font-medium">开源，是我们承认自身局限性的体现，也是我们对集体智慧的信念。</p>
-</div>
+::right::
+**我们绘制的，只是一张草图。**
 
-<div class="mt-8 p-6 bg-gray-50 rounded-lg">
-<p class="text-gray-600 italic">我们深知，我们目前所做的，最多只是在一张巨大的、空白的地图上，标记出了几个我们认为可靠的出发点。而要绘制出完整的世界，需要所有方向的探索者共同努力。</p>
-</div>
-</div>
-</div>
-</div>
+真正的世界地图，需要所有探索者共同完成。
+
+**开源，是我们承认自身局限性的体现，也是我们对集体智慧的信念。**
+
+<!-- <div class="mt-8 p-6 bg-gray-50 rounded-lg">
+我们深知，我们目前所做的，最多只是在一张巨大的、空白的地图上，标记出了几个我们认为可靠的出发点。而要绘制出完整的世界，需要所有方向的探索者共同努力。
+</div> -->
 
 <!--
 演讲者说: "我们深知，我们目前所做的，最多只是在一张巨大的、空白的地图上，标记出了几个我们认为可靠的出发点。而要绘制出完整的世界，需要所有方向的探索者共同努力。因此，开源对我们来说是一个必然的选择。它首先代表了我们对自身局限性的承认，其次，也代表了我们对集体智慧最深刻的信念。"
@@ -346,50 +332,44 @@ title: "如何同行"
 <div class="w-full max-w-5xl">
 <div class="text-center mb-8">
 <h2 class="text-2xl font-bold mb-4">如果我们的思考能引起你的共鸣</h2>
-<p class="text-lg text-gray-600">我们期待以三种具体的方式同行</p>
+<p class="text-lg text-gray-600">我们期待以三种方式同行</p>
 </div>
 
 <div class="grid grid-cols-3 gap-8">
-<div class="text-center p-6 bg-white rounded-lg shadow-lg border">
+<div class="text-center p-6 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
 <div class="text-4xl mb-4">🔧</div>
-<h3 class="text-xl font-bold mb-4 text-blue-700">Tools</h3>
-<h4 class="text-lg font-semibold mb-3">打造更强的武器库</h4>
-<ul class="text-left space-y-2 text-gray-600 text-sm">
-<li>• 开发VS Code插件</li>
-<li>• 与其他平台集成（Figma, Notion）</li>
-<li>• 优化CLI体验</li>
-<li>• 提升开发者工具链</li>
+<h3 class="text-xl font-bold mb-3 text-blue-700">Tools</h3>
+<p class="text-gray-600 mb-4 font-medium">打造更强的武器库</p>
+<ul class="text-left space-y-2 text-gray-600">
+<li>• VS Code插件</li>
+<li>• 生态集成</li>
+<li>• 更多高质量工具集</li>
 </ul>
 </div>
 
-<div class="text-center p-6 bg-white rounded-lg shadow-lg border">
+<div class="text-center p-6 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
 <div class="text-4xl mb-4">🎯</div>
-<h3 class="text-xl font-bold mb-4 text-green-700">Benchmarks</h3>
-<h4 class="text-lg font-semibold mb-3">定义"好"的标准</h4>
-<ul class="text-left space-y-2 text-gray-600 text-sm">
-<li>• 贡献特定行业的规划评估数据集</li>
-<li>• 开发新的评测方法</li>
-<li>• 分享评测报告</li>
-<li>• 建立客观度量标准</li>
+<h3 class="text-xl font-bold mb-3 text-green-700">Benchmarks</h3>
+<p class="text-gray-600 mb-4 font-medium">定义"好"的标准</p>
+<ul class="text-left space-y-2 text-gray-600">
+<li>• 评估数据集</li>
+<li>• 评测方法</li>
+<li>• 度量标准</li>
 </ul>
 </div>
 
-<div class="text-center p-6 bg-white rounded-lg shadow-lg border">
+<div class="text-center p-6 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
 <div class="text-4xl mb-4">🏆</div>
-<h3 class="text-xl font-bold mb-4 text-purple-700">Showcases</h3>
-<h4 class="text-lg font-semibold mb-3">分享您的创造</h4>
-<ul class="text-left space-y-2 text-gray-600 text-sm">
-<li>• 将酷应用提交到Awesome List</li>
-<li>• 撰写实践教程</li>
-<li>• 录制分享视频</li>
-<li>• 照亮未探索的领域</li>
+<h3 class="text-xl font-bold mb-3 text-purple-700">Showcases</h3>
+<p class="text-gray-600 mb-4 font-medium">分享您的创造</p>
+<ul class="text-left space-y-2 text-gray-600">
+<li>• 应用案例</li>
+<li>• 实践教程</li>
+<li>• 分享视频</li>
 </ul>
 </div>
 </div>
 
-<div class="mt-8 p-6 bg-blue-50 rounded-lg">
-<p class="text-center text-gray-700">我们相信，这些具体的贡献，将共同构成我们前行的道路。</p>
-</div>
 </div>
 </div>
 
@@ -440,57 +420,57 @@ title: "期待交流"
 ---
 
 <div class="flex items-center justify-center h-full">
-<div class="text-center w-full max-w-4xl">
+<div class="text-center w-full max-w-5xl">
 <h2 class="text-2xl font-bold mb-8">加入我们的社区</h2>
 
-<div class="grid grid-cols-2 gap-8 mb-8">
-<div class="p-6 bg-gray-900 text-white rounded-lg">
-<div class="text-3xl mb-4">📱</div>
-<h3 class="text-lg font-bold mb-2">GitHub</h3>
-<div class="w-24 h-24 mx-auto bg-white rounded flex items-center justify-center">
+<div class="grid grid-cols-4 gap-6 mb-8">
+<div class="p-6 bg-gray-900 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="text-4xl mb-4">📱</div>
+<h3 class="text-lg font-bold mb-3">GitHub</h3>
+<div class="w-20 h-20 mx-auto bg-white rounded flex items-center justify-center">
 <span class="text-xs text-gray-500">QR Code</span>
 </div>
 </div>
 
-<div class="p-6 bg-indigo-600 text-white rounded-lg">
-<div class="text-3xl mb-4">💬</div>
-<h3 class="text-lg font-bold mb-2">Discord</h3>
-<div class="w-24 h-24 mx-auto bg-white rounded flex items-center justify-center">
+<div class="p-6 bg-indigo-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="text-4xl mb-4">💬</div>
+<h3 class="text-lg font-bold mb-3">Discord</h3>
+<div class="w-20 h-20 mx-auto bg-white rounded flex items-center justify-center">
 <span class="text-xs text-gray-500">QR Code</span>
 </div>
 </div>
 
-<div class="p-6 bg-green-600 text-white rounded-lg">
-<div class="text-3xl mb-4">📱</div>
-<h3 class="text-lg font-bold mb-2">微信群</h3>
-<div class="w-24 h-24 mx-auto bg-white rounded flex items-center justify-center">
+<div class="p-6 bg-green-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="text-4xl mb-4">📱</div>
+<h3 class="text-lg font-bold mb-3">微信群</h3>
+<div class="w-20 h-20 mx-auto bg-white rounded flex items-center justify-center">
 <span class="text-xs text-gray-500">QR Code</span>
 </div>
 </div>
 
-<div class="p-6 bg-blue-600 text-white rounded-lg">
-<div class="text-3xl mb-4">🌐</div>
-<h3 class="text-lg font-bold mb-2">官网</h3>
-<div class="w-24 h-24 mx-auto bg-white rounded flex items-center justify-center">
+<div class="p-6 bg-blue-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="text-4xl mb-4">🌐</div>
+<h3 class="text-lg font-bold mb-3">官网</h3>
+<div class="w-20 h-20 mx-auto bg-white rounded flex items-center justify-center">
 <span class="text-xs text-gray-500">QR Code</span>
 </div>
 </div>
 </div>
 
-<div class="p-6 bg-yellow-50 rounded-lg">
-<p class="text-gray-700 leading-relaxed">
-        必须坦诚，我们今天所分享的一切，都处于一个非常早期的阶段。无论是GTPlanner还是它背后的The Agent Builder，都更像是一个哲学原型，而非一个成熟产品。
+<div class="p-8 bg-yellow-50 rounded-lg border border-yellow-200 shadow-sm">
+<p class="text-gray-700 leading-relaxed text-lg mb-4">
+必须坦诚，我们今天所分享的一切，都处于一个非常早期的阶段。无论是GTPlanner还是它背后的The Agent Builder，都更像是一个哲学原型，而非一个成熟产品。
 </p>
-<p class="text-gray-700 mt-4">
-        今天更像是一次思考的分享，一次真诚的邀请。如果今天的分享，有哪些地方你认为存在谬误，或者遗漏了重要的视角，我们非常渴望能听到你的批评和见解。
+<p class="text-gray-700 leading-relaxed text-lg mb-4">
+今天更像是一次思考的分享，一次真诚的邀请。如果今天的分享，有哪些地方你认为存在谬误，或者遗漏了重要的视角，我们非常渴望能听到你的批评和见解。
 </p>
-<p class="text-blue-600 font-semibold mt-4">
-        因为我们相信，建设性的批评，是比赞美更有价值的礼物。
+<p class="text-blue-600 font-semibold text-lg">
+因为我们相信，建设性的批评，是比赞美更有价值的礼物。
 </p>
 </div>
 
 <div class="mt-8">
-<p class="text-xl font-semibold text-gray-800">谢谢大家</p>
+<p class="text-2xl font-semibold text-gray-800">谢谢大家</p>
 </div>
 </div>
 </div>

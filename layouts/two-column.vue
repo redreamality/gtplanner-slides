@@ -1,5 +1,5 @@
 <template>
-  <div class="slidev-layout title-content">
+  <div class="slidev-layout two-column">
     <!-- Background image is handled by CSS -->
 
     <!-- Header section with white text title and logo (above content mask) -->
@@ -15,9 +15,19 @@
     <!-- Semi-transparent white overlay/mask (only covers content area) -->
     <div class="content-mask"></div>
 
-    <!-- Main content area -->
+    <!-- Main content area with two columns -->
     <main class="slide-content">
-      <slot />
+      <div class="two-column-grid">
+        <!-- Left column -->
+        <div class="column-left">
+          <slot name="left" />
+        </div>
+        
+        <!-- Right column -->
+        <div class="column-right">
+          <slot name="right" />
+        </div>
+      </div>
     </main>
 
     <!-- Footer space (just spacing, no actual content) -->
@@ -26,7 +36,7 @@
 </template>
 
 <style scoped>
-.slidev-layout.title-content {
+.slidev-layout.two-column {
   @apply h-full relative flex flex-col;
   background: url('/assets/background.jpg') center/cover no-repeat;
   color: #1f2937; /* Dark text for light background */
@@ -58,11 +68,10 @@
   @apply text-4xl font-bold text-white;
   margin: 0;
   line-height: 1.2;
-  /* text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); */
 }
 
 /* Logo positioning (using the existing CSS system) */
-.slidev-layout.title-content::before {
+.slidev-layout.two-column::before {
   content: '';
   position: absolute;
   top: -1rem;
@@ -82,11 +91,21 @@
   overflow-y: visible;
 }
 
+/* Two column grid layout */
+.two-column-grid {
+  @apply grid grid-cols-2 gap-8 h-full;
+}
+
+.column-left,
+.column-right {
+  @apply flex flex-col justify-center;
+}
+
 /* Footer space */
 .slide-footer {
   position: relative;
   z-index: 5;
-  @apply h-4; /* Reduced bottom spacing to give more room to content */
+  @apply h-4;
 }
 
 /* Typography styles for dark text on light background */
@@ -171,8 +190,17 @@
   @apply bg-gray-100 font-semibold;
 }
 
+/* Image sizing for better layout */
+.slide-content :deep(img) {
+  @apply max-w-full max-h-96 object-contain mx-auto;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .two-column-grid {
+    @apply grid-cols-1 gap-4;
+  }
+  
   .slide-header {
     @apply p-4 pb-2;
   }
@@ -185,7 +213,7 @@
     @apply px-4;
   }
   
-  .slidev-layout.title-content::before {
+  .slidev-layout.two-column::before {
     top: 1rem;
     right: 1rem;
     width: 80px;

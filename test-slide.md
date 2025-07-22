@@ -48,3 +48,28 @@ title: hi
 # hi
 
 asdfa
+
+---
+layout: section-divider
+title: ""
+---
+
+## Part Two：This is a section
+
+
+
+---
+layout: two-column
+title: "1"
+---
+
+## Part Two：This is a section
+
+
+::left::
+- 1231
+- 1231
+- 1231
+
+::right::
+right 1231
