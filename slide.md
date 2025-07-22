@@ -127,23 +127,23 @@ title: "系统，而非工具"
 
 ::right::
 
-<div class="flex flex-col justify-center h-full space-y-8">
+<div class="flex flex-col justify-center h-full space-y-4">
 
-<div class="grid grid-cols-1 gap-6">
-<div class="text-center p-6 bg-red-50 rounded-lg border-l-4 border-red-500">
-<h3 class="text-xl font-bold mb-3 text-red-700">工具</h3>
-<div class="text-red-600 font-semibold mb-4">价值在使用中消耗</div>
-<ul class="text-left space-y-2 text-gray-700">
+<div class="grid grid-cols-2 gap-3">
+<div class="text-center p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
+<h3 class="text-base font-bold mb-1 text-red-700">工具</h3>
+<div class="text-red-600 font-semibold mb-2 text-xs">价值在使用中消耗</div>
+<ul class="text-left space-y-0.5 text-gray-700 text-xs">
 <li>• 一次性价值交付</li>
 <li>• 无法内化个人知识</li>
 <li>• 通用但不深入</li>
 </ul>
 </div>
 
-<div class="text-center p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
-<h3 class="text-xl font-bold mb-3 text-green-700">系统</h3>
-<div class="text-green-600 font-semibold mb-4">价值在构建中沉淀</div>
-<ul class="text-left space-y-2 text-gray-700">
+<div class="text-center p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+<h3 class="text-base font-bold mb-1 text-green-700">系统</h3>
+<div class="text-green-600 font-semibold mb-2 text-xs">价值在构建中沉淀</div>
+<ul class="text-left space-y-0.5 text-gray-700 text-xs">
 <li>• 时间的复利效应</li>
 <li>• 内化独特知识体系</li>
 <li>• 成为思想的延伸</li>
@@ -151,8 +151,19 @@ title: "系统，而非工具"
 </div>
 </div>
 
-<div class="p-6 bg-blue-50 rounded-lg border border-blue-200">
-<p class="text-center text-gray-700 font-medium">一个通用的工具无法内化你独特的知识体系，<br/>而一个由你亲手构建的系统可以。</p>
+<div class="p-3 bg-blue-50 rounded-lg border border-blue-200">
+<p class="text-center text-gray-700 font-medium text-xs leading-relaxed">
+一个通用的工具无法内化你独特的知识体系，<br/>
+而一个由你亲手构建的系统可以。
+</p>
+</div>
+
+<div class="text-center">
+<div class="inline-flex items-center space-x-2 px-4 py-2 bg-gray-100 rounded-full">
+<span class="text-xs text-gray-600">构建 > 使用</span>
+<span class="text-sm">🔄</span>
+<span class="text-xs text-gray-600">沉淀 > 消耗</span>
+</div>
 </div>
 
 </div>
@@ -174,34 +185,34 @@ title: "为思想者，而非（传统）开发者"
 ::right::
 <div class="flex flex-col justify-center h-full space-y-6">
 
-<div class="grid grid-cols-1 gap-4 mb-6">
-<div class="p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-<h3 class="text-xl font-bold mb-3 text-blue-700">水面之上</h3>
-<p class="text-blue-600 font-semibold text-lg">通用需求</p>
-<p class="text-gray-600 mt-2">显性的、共通的需求</p>
+<div class="grid grid-cols-1 gap-3 mb-4">
+<div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+<h3 class="text-lg font-bold mb-2 text-blue-700">水面之上</h3>
+<p class="text-blue-600 font-semibold text-sm">通用需求</p>
+<p class="text-gray-600 mt-1 text-xs">显性的、共通的需求</p>
 </div>
 
-<div class="p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
-<h3 class="text-xl font-bold mb-3 text-purple-700">水面之下</h3>
-<p class="text-purple-600 font-semibold text-lg">个性化知识</p>
-<p class="text-gray-600 mt-2">各领域专家的隐性知识</p>
+<div class="p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+<h3 class="text-lg font-bold mb-2 text-purple-700">水面之下</h3>
+<p class="text-purple-600 font-semibold text-sm">个性化知识</p>
+<p class="text-gray-600 mt-1 text-xs">各领域专家的隐性知识</p>
 </div>
 </div>
 
-<div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
-<p class="text-gray-700 font-medium text-center leading-relaxed">
+<div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+<p class="text-gray-700 font-medium text-center leading-relaxed text-sm">
 我们的关注点，是水面下那座巨大的冰山——<br/>
 那些存在于各个领域专家头脑中的，<br/>
 隐性、个性化的知识。
 </p>
 </div>
 
-<div class="flex justify-center space-x-8 mt-4">
-<span class="text-3xl">⚖️</span>
-<span class="text-3xl">🩺</span>
-<span class="text-3xl">📊</span>
-<span class="text-3xl">🔬</span>
-<span class="text-3xl">🎨</span>
+<div class="flex justify-center space-x-6 mt-3">
+<span class="text-2xl">⚖️</span>
+<span class="text-2xl">🩺</span>
+<span class="text-2xl">📊</span>
+<span class="text-2xl">🔬</span>
+<span class="text-2xl">🎨</span>
 </div>
 
 </div>
@@ -227,27 +238,27 @@ title: "回到原点：GTPlanner"
 <div class="flex flex-col justify-center h-full space-y-8">
 
 <div class="text-center">
-<h2 class="text-2xl font-bold mb-4 text-gray-800">回顾：Agent = 流程 (Flow) + 上下文 (Context)</h2>
-<p class="text-lg text-gray-600">GTPlanner 尝试回答3个基本问题</p>
+<h2 class="text-lg font-bold mb-3 text-gray-800">回顾：Agent = 流程 (Flow) + 上下文 (Context)</h2>
+<p class="text-sm text-gray-600">GTPlanner 尝试回答3个基本问题</p>
 </div>
 
-<div class="grid grid-cols-1 gap-6">
-<div class="text-center p-6 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-<div class="text-3xl mb-4">💬</div>
-<h3 class="text-lg font-bold mb-3 text-blue-700">1. 澄清需求</h3>
-<p class="text-gray-600">你的真实意图是什么？</p>
+<div class="grid grid-cols-1 gap-4">
+<div class="text-center p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+<div class="text-2xl mb-3">💬</div>
+<h3 class="text-base font-bold mb-2 text-blue-700">1. 澄清需求</h3>
+<p class="text-gray-600 text-sm">你的真实意图是什么？</p>
 </div>
 
-<div class="text-center p-6 bg-green-50 rounded-lg border-l-4 border-green-500">
-<div class="text-3xl mb-4">🔧</div>
-<h3 class="text-lg font-bold mb-3 text-green-700">2. 梳理资源</h3>
-<p class="text-gray-600">实现它，需要哪些已知和未知？</p>
+<div class="text-center p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+<div class="text-2xl mb-3">🔧</div>
+<h3 class="text-base font-bold mb-2 text-green-700">2. 梳理资源</h3>
+<p class="text-gray-600 text-sm">实现它，需要哪些已知和未知？</p>
 </div>
 
-<div class="text-center p-6 bg-purple-50 rounded-lg border-l-4 border-purple-500">
-<div class="text-3xl mb-4">📋</div>
-<h3 class="text-lg font-bold mb-3 text-purple-700">3. 生成规划</h3>
-<p class="text-gray-600">第一步的行动路径是什么？</p>
+<div class="text-center p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+<div class="text-2xl mb-3">📋</div>
+<h3 class="text-base font-bold mb-2 text-purple-700">3. 生成规划</h3>
+<p class="text-gray-600 text-sm">第一步的行动路径是什么？</p>
 </div>
 </div>
 
@@ -261,8 +272,8 @@ title: "回到原点：GTPlanner"
 <img src="/pictures/image_07.png" alt="GTPlanner的三件事" class="w-full max-w-xs h-auto object-contain" />
 </div>
 
-<div class="p-6 bg-gray-50 rounded-lg border border-gray-200">
-<p class="text-center text-gray-700 italic leading-relaxed">
+<div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
+<p class="text-center text-gray-700 italic leading-relaxed text-sm">
 我们试图回归构建的本质，让创造的过程摆脱对复杂框架的依赖，<br/>
 回到对"流程"的思考和对"上下文"的组织。
 </p>
@@ -330,39 +341,39 @@ title: "如何同行"
 
 <div class="flex items-center justify-center h-full">
 <div class="w-full max-w-5xl">
-<div class="text-center mb-8">
-<h2 class="text-2xl font-bold mb-4">如果我们的思考能引起你的共鸣</h2>
-<p class="text-lg text-gray-600">我们期待以三种方式同行</p>
+<div class="text-center mb-6">
+<h2 class="text-lg font-bold mb-3">如果我们的思考能引起你的共鸣</h2>
+<p class="text-sm text-gray-600">我们期待以三种方式同行</p>
 </div>
 
-<div class="grid grid-cols-3 gap-8">
-<div class="text-center p-6 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
-<div class="text-4xl mb-4">🔧</div>
-<h3 class="text-xl font-bold mb-3 text-blue-700">Tools</h3>
-<p class="text-gray-600 mb-4 font-medium">打造更强的武器库</p>
-<ul class="text-left space-y-2 text-gray-600">
+<div class="grid grid-cols-3 gap-6">
+<div class="text-center p-4 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
+<div class="text-3xl mb-3">🔧</div>
+<h3 class="text-lg font-bold mb-2 text-blue-700">Tools</h3>
+<p class="text-gray-600 mb-3 font-medium text-sm">打造更强的武器库</p>
+<ul class="text-left space-y-1 text-gray-600 text-sm">
 <li>• VS Code插件</li>
 <li>• 生态集成</li>
 <li>• 更多高质量工具集</li>
 </ul>
 </div>
 
-<div class="text-center p-6 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
-<div class="text-4xl mb-4">🎯</div>
-<h3 class="text-xl font-bold mb-3 text-green-700">Benchmarks</h3>
-<p class="text-gray-600 mb-4 font-medium">定义"好"的标准</p>
-<ul class="text-left space-y-2 text-gray-600">
+<div class="text-center p-4 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
+<div class="text-3xl mb-3">🎯</div>
+<h3 class="text-lg font-bold mb-2 text-green-700">Benchmarks</h3>
+<p class="text-gray-600 mb-3 font-medium text-sm">定义"好"的标准</p>
+<ul class="text-left space-y-1 text-gray-600 text-sm">
 <li>• 评估数据集</li>
 <li>• 评测方法</li>
 <li>• 度量标准</li>
 </ul>
 </div>
 
-<div class="text-center p-6 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
-<div class="text-4xl mb-4">🏆</div>
-<h3 class="text-xl font-bold mb-3 text-purple-700">Showcases</h3>
-<p class="text-gray-600 mb-4 font-medium">分享您的创造</p>
-<ul class="text-left space-y-2 text-gray-600">
+<div class="text-center p-4 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow">
+<div class="text-3xl mb-3">🏆</div>
+<h3 class="text-lg font-bold mb-2 text-purple-700">Showcases</h3>
+<p class="text-gray-600 mb-3 font-medium text-sm">分享您的创造</p>
+<ul class="text-left space-y-1 text-gray-600 text-sm">
 <li>• 应用案例</li>
 <li>• 实践教程</li>
 <li>• 分享视频</li>
@@ -421,56 +432,44 @@ title: "期待交流"
 
 <div class="flex items-center justify-center h-full">
 <div class="text-center w-full max-w-5xl">
-<h2 class="text-2xl font-bold mb-8">加入我们的社区</h2>
+<h2 class="text-lg font-bold mb-6">加入我们的社区</h2>
 
-<div class="grid grid-cols-4 gap-6 mb-8">
-<div class="p-6 bg-gray-900 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-<div class="text-4xl mb-4">📱</div>
-<h3 class="text-lg font-bold mb-3">GitHub</h3>
-<div class="w-20 h-20 mx-auto bg-white rounded flex items-center justify-center">
+<div class="grid grid-cols-4 gap-4 mb-6">
+<div class="p-4 bg-gray-900 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="text-3xl mb-3">📱</div>
+<h3 class="text-base font-bold mb-2">GitHub</h3>
+<div class="w-16 h-16 mx-auto bg-white rounded flex items-center justify-center">
 <span class="text-xs text-gray-500">QR Code</span>
 </div>
 </div>
 
-<div class="p-6 bg-indigo-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-<div class="text-4xl mb-4">💬</div>
-<h3 class="text-lg font-bold mb-3">Discord</h3>
-<div class="w-20 h-20 mx-auto bg-white rounded flex items-center justify-center">
+<div class="p-4 bg-indigo-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="text-3xl mb-3">💬</div>
+<h3 class="text-base font-bold mb-2">Discord</h3>
+<div class="w-16 h-16 mx-auto bg-white rounded flex items-center justify-center">
 <span class="text-xs text-gray-500">QR Code</span>
 </div>
 </div>
 
-<div class="p-6 bg-green-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-<div class="text-4xl mb-4">📱</div>
-<h3 class="text-lg font-bold mb-3">微信群</h3>
-<div class="w-20 h-20 mx-auto bg-white rounded flex items-center justify-center">
+<div class="p-4 bg-green-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="text-3xl mb-3">📱</div>
+<h3 class="text-base font-bold mb-2">微信群</h3>
+<div class="w-16 h-16 mx-auto bg-white rounded flex items-center justify-center">
 <span class="text-xs text-gray-500">QR Code</span>
 </div>
 </div>
 
-<div class="p-6 bg-blue-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-<div class="text-4xl mb-4">🌐</div>
-<h3 class="text-lg font-bold mb-3">官网</h3>
-<div class="w-20 h-20 mx-auto bg-white rounded flex items-center justify-center">
+<div class="p-4 bg-blue-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+<div class="text-3xl mb-3">🌐</div>
+<h3 class="text-base font-bold mb-2">官网</h3>
+<div class="w-16 h-16 mx-auto bg-white rounded flex items-center justify-center">
 <span class="text-xs text-gray-500">QR Code</span>
 </div>
 </div>
 </div>
 
-<div class="p-8 bg-yellow-50 rounded-lg border border-yellow-200 shadow-sm">
-<p class="text-gray-700 leading-relaxed text-lg mb-4">
-必须坦诚，我们今天所分享的一切，都处于一个非常早期的阶段。无论是GTPlanner还是它背后的The Agent Builder，都更像是一个哲学原型，而非一个成熟产品。
-</p>
-<p class="text-gray-700 leading-relaxed text-lg mb-4">
-今天更像是一次思考的分享，一次真诚的邀请。如果今天的分享，有哪些地方你认为存在谬误，或者遗漏了重要的视角，我们非常渴望能听到你的批评和见解。
-</p>
-<p class="text-blue-600 font-semibold text-lg">
-因为我们相信，建设性的批评，是比赞美更有价值的礼物。
-</p>
-</div>
-
-<div class="mt-8">
-<p class="text-2xl font-semibold text-gray-800">谢谢大家</p>
+<div class="mt-6">
+<p class="text-lg font-semibold text-gray-800">谢谢大家</p>
 </div>
 </div>
 </div>
