@@ -443,6 +443,6 @@ This is an example of the **section-divider** layout component.
 
 Perfect for marking transitions between different parts of your presentation with:
 - Clean, minimal design
-- No content mask overlay
+- Compact horizontal section mask for improved readability
 - Centered content layout
 - Professional OpenSQZ branding
