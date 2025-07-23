@@ -184,40 +184,33 @@ title: "为思想者，而非（传统）开发者"
 
 ::left::
 <div class="flex items-center justify-center h-full">
-<img src="/pictures/image_06.png" alt="思想的冰山" class="w-full max-w-sm h-auto object-contain" />
+<img src="/pictures/image_06.png" alt="思想的冰山" class="w-11/12 h-auto object-contain" />
 </div>
 
 ::right::
-<div class="flex flex-col justify-center h-full space-y-6">
+<!-- 减小了卡片间的垂直间距 -->
+<div class="flex flex-col justify-center h-full space-y-4">
 
-<div class="grid grid-cols-1 gap-3 mb-4">
+<div class="grid grid-cols-1 gap-3">
 <div class="p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-<h3 class="text-lg font-bold mb-2 text-blue-700">水面之上</h3>
-<p class="text-blue-600 font-semibold text-sm">通用需求</p>
-<p class="text-gray-600 mt-1 text-xs">显性的、共通的需求</p>
+<h3 class="!text-lg !font-bold !mb-1 text-blue-700">水面之上</h3>
+<p class="!text-blue-600 !font-semibold !text-sm">通用需求</p>
+<p class="text-gray-600 mt-1 !text-xs">显性的、共通的需求</p>
 </div>
 
 <div class="p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
-<h3 class="text-lg font-bold mb-2 text-purple-700">水面之下</h3>
-<p class="text-purple-600 font-semibold text-sm">个性化知识</p>
-<p class="text-gray-600 mt-1 text-xs">各领域专家的隐性知识</p>
+<h3 class="!text-lg !font-bold !mb-1 text-purple-700">水面之下</h3>
+<p class="!text-purple-600 !font-semibold !text-sm">个性化知识</p>
+<p class="text-gray-600 mt-1 !text-xs">各领域专家的隐性知识</p>
 </div>
 </div>
 
 <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
-<p class="text-gray-700 font-medium text-center leading-relaxed text-sm">
+<p class="text-gray-700 font-medium text-center leading-relaxed !text-sm">
 我们的关注点，是水面下那座巨大的冰山——<br/>
 那些存在于各个领域专家头脑中的，<br/>
 隐性、个性化的知识。
 </p>
-</div>
-
-<div class="flex justify-center space-x-6 mt-3">
-<span class="text-2xl">⚖️</span>
-<span class="text-2xl">🩺</span>
-<span class="text-2xl">📊</span>
-<span class="text-2xl">🔬</span>
-<span class="text-2xl">🎨</span>
 </div>
 
 </div>
@@ -240,30 +233,40 @@ title: "回到原点：GTPlanner"
 
 ::left::
 
-<div class="flex flex-col justify-center h-full space-y-8">
+<!-- 左栏内容保持不变，保持垂直居中和适当间距 -->
+<div class="flex flex-col justify-center h-full space-y-4">
 
 <div class="text-center">
-<h2 class="text-lg font-bold mb-3 text-gray-800">回顾：Agent = 流程 (Flow) + 上下文 (Context)</h2>
-<p class="text-sm text-gray-600">GTPlanner 尝试回答3个基本问题</p>
+<h2 class="!text-lg !font-bold !mb-1 text-gray-800">回顾：Agent = 流程 (Flow) + 上下文 (Context)</h2>
+<p class="!text-sm text-gray-600 !mb-2">GTPlanner 尝试回答3个基本问题</p>
 </div>
 
-<div class="grid grid-cols-1 gap-4">
-<div class="text-center p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-<div class="text-2xl mb-3">💬</div>
-<h3 class="text-base font-bold mb-2 text-blue-700">1. 澄清需求</h3>
-<p class="text-gray-600 text-sm">你的真实意图是什么？</p>
+<div class="grid grid-cols-1 gap-2">
+<!-- Card 1 -->
+<div class="px-4 py-2 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+  <div class="flex items-center justify-center space-x-2">
+    <span class="text-xl">💬</span>
+    <h3 class="!text-base !font-bold !text-blue-700">1. 澄清需求</h3>
+  </div>
+  <p class="text-center !text-sm text-gray-600 mt-1">你的真实意图是什么？</p>
 </div>
 
-<div class="text-center p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-<div class="text-2xl mb-3">🔧</div>
-<h3 class="text-base font-bold mb-2 text-green-700">2. 梳理资源</h3>
-<p class="text-gray-600 text-sm">实现它，需要哪些已知和未知？</p>
+<!-- Card 2 -->
+<div class="px-4 py-2 bg-green-50 rounded-lg border-l-4 border-green-500">
+  <div class="flex items-center justify-center space-x-2">
+    <span class="text-xl">🔧</span>
+    <h3 class="!text-base !font-bold !text-green-700">2. 梳理资源</h3>
+  </div>
+  <p class="text-center !text-sm text-gray-600 mt-1">实现它，需要哪些已知和未知？</p>
 </div>
 
-<div class="text-center p-4 bg-purple-50 rounded-lg border-l-4 border-purple-500">
-<div class="text-2xl mb-3">📋</div>
-<h3 class="text-base font-bold mb-2 text-purple-700">3. 生成规划</h3>
-<p class="text-gray-600 text-sm">第一步的行动路径是什么？</p>
+<!-- Card 3 -->
+<div class="px-4 py-2 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+  <div class="flex items-center justify-center space-x-2">
+    <span class="text-xl">📋</span>
+    <h3 class="!text-base !font-bold !text-purple-700">3. 生成规划</h3>
+  </div>
+  <p class="text-center !text-sm text-gray-600 mt-1">第一步的行动路径是什么？</p>
 </div>
 </div>
 
@@ -271,18 +274,21 @@ title: "回到原点：GTPlanner"
 
 ::right::
 
-<div class="flex flex-col justify-center h-full space-y-6">
+<!-- 右栏重构为垂直堆叠的三个部分 -->
+<div class="flex flex-col justify-center h-full space-y-4">
 
-<div class="flex items-center justify-center">
-<img src="/pictures/image_07.png" alt="GTPlanner的三件事" class="w-full max-w-xs h-auto object-contain" />
-</div>
+  <!-- 1. GIF 动图在最上方 -->
+  <img src="/pictures/agent_build.gif" alt="Agent 构建过程演示" class="w-full h-auto object-contain rounded-lg shadow-lg" />
 
-<div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
-<p class="text-center text-gray-700 italic leading-relaxed text-sm">
-我们试图回归构建的本质，让创造的过程摆脱对复杂框架的依赖，<br/>
-回到对"流程"的思考和对"上下文"的组织。
-</p>
-</div>
+  <!-- 2. 静态流程图在中间，独占一行 -->
+  <img src="/pictures/image_07.png" alt="GTPlanner的三件事" class="w-2/3 h-auto object-contain self-center" />
+  
+  <!-- 3. 总结性文字在最下方，独占一行 -->
+  <div class="px-4 py-2 bg-gray-50 rounded-lg border border-gray-200">
+    <p class="text-center text-gray-700 italic leading-normal !text-sm">
+      我们试图回归构建的本质，让创造的过程摆脱对复杂框架的依赖，回到对"流程"的思考和对"上下文"的组织。
+    </p>
+  </div>
 
 </div>
 
