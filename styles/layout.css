@@ -1,0 +1,17 @@
+/* Footnote styles - smaller font size */
+.footnotes-sep {
+  @apply mt-5 opacity-10;
+}
+
+.footnotes {
+  @apply text-[8px] opacity-75;
+}
+
+.footnote-backref {
+  display: none;
+}
+
+/* Footnote reference in text */
+.footnote-ref {
+  @apply text-[8px];
+}

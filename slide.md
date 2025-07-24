@@ -10,7 +10,7 @@ info: |
 class: text-center
 drawings:
   persist: false
-transition: slide-left
+transition: 
 mdc: true
 layout: cover
 ---
@@ -32,7 +32,7 @@ layout: section-divider
 title: ""
 ---
 
-## 开场问题：思想，与工具的形态
+## 开场问题：思想与工具的关系
 
 ---
 layout: two-column
@@ -45,7 +45,7 @@ title: "思想，与工具的形态"
 ::right::
 
 - 工具与思想：一个永恒的矛盾
-- 创造的困境：
+- 创作的困境：
   - **思想的深度**与**工具的形态**不匹配
   - 创作者必须先成为**工具的掌握者**
   - 音乐家需要精通乐谱，画家需要掌握技法，软件开发需要学会编程
@@ -57,33 +57,45 @@ title: "思想，与工具的形态"
 演讲者说: "让我们思考一个根本性问题：工具与思想的关系。在人类历史长河中，每当思想的深度超越了工具所能承载的形态，创造就会变成一种挣扎。这种挣扎在今天尤为明显。一个音乐家在脑海中构思了一首交响乐，但要把它变成现实，必须先掌握作曲技法；一个画家心中有绝妙的构图，但要表达出来，必须先精通绘画技巧；一个企业家有创新的商业模式，但要实现它，往往需要先学会编程。这种必须先成为'工具工匠'才能成为'创作者'的范式，让许多宝贵的创意被工具的门槛阻隔在了现实之外。这种工具形态与思想深度之间的鸿沟，正是我们今天要探讨的核心问题。"
 -->
 
+
+
 ---
 layout: two-column
 title: "回到Agent构建的本质"
+dragPos:
+  "1": -17,63,469,330
+  "2": 466,167,374,253
+  "3": 467,35,369,208
 ---
 
 ::left::
+<v-drag pos="1" >
 <img src="/pictures/image_03.png" alt="第一性原理信息图" />
+</v-drag>
 
 ::right::
-<div class="space-y-6">
+<div class="space-y-6 text-sm">
+<v-drag pos="3" >
 <div class="bg-gray-50 p-6 rounded-lg">
 <h3 class="text-xl font-bold mb-4">核心公式</h3>
-<div class="space-y-2 text-lg">
+<div class="space-y-2">
 <div><strong>程序</strong> = 算法 + 数据结构</div>
 <div class="text-blue-600"><strong>Agent</strong> = 流程 (Flow) + 上下文 (Context)</div>
 </div>
 </div>
+</v-drag>
 
+<v-drag pos="2" >
 <div class="bg-gray-50 p-6 rounded-lg">
 <h3 class="text-xl font-bold mb-4">上下文四要素</h3>
 <ul class="space-y-2 text-left">
 <li>任务 (Task) - 做什么</li>
-<li>工具 (Tools) - 用什么</li>
 <li>参考文件 (Reference) - 参考什么</li>
+<li>工具 (Tools) - 用什么</li>
 <li>输出格式 (Format) - 得到什么</li>
 </ul>
 </div>
+</v-drag>
 </div>
 
 <!--
@@ -228,7 +240,12 @@ title: ""
 
 ---
 layout: two-column
-title: "回到原点：GTPlanner"
+title: GTplanner：生成Vibe Coding的施工图
+dragPos:
+  "1": -4,28,396,112
+  "2": -6,156,400,120
+  "3": -9,277,403,112
+  h: -11,-3,409,80
 ---
 
 ::left::
@@ -236,38 +253,36 @@ title: "回到原点：GTPlanner"
 <!-- 左栏内容保持不变，保持垂直居中和适当间距 -->
 <div class="flex flex-col justify-center h-full space-y-4">
 
-<div class="text-center">
-<h2 class="!text-lg !font-bold !mb-1 text-gray-800">回顾：Agent = 流程 (Flow) + 上下文 (Context)</h2>
-<p class="!text-sm text-gray-600 !mb-2">GTPlanner 尝试回答3个基本问题</p>
-</div>
-
-<div class="grid grid-cols-1 gap-2">
+<div class="grid grid-cols-1 gap-2 text-xs">
 <!-- Card 1 -->
-<div class="px-4 py-2 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+<v-drag pos="1">
+<div class="px-4 py-1 bg-blue-50 rounded-lg border-l-4 border-blue-500">
   <div class="flex items-center justify-center space-x-2">
-    <span class="text-xl">💬</span>
-    <h3 class="!text-base !font-bold !text-blue-700">1. 澄清需求</h3>
+    <h3 class="!font-bold !text-blue-700">💬 1. 澄清需求</h3>
   </div>
-  <p class="text-center !text-sm text-gray-600 mt-1">你的真实意图是什么？</p>
+  <div class="!text-sm text-gray-600">主动提问，对话即开发。通过LLM对话能力，主动澄清模糊需求，挖掘隐藏意图，确保项目目标明确。</div>
 </div>
+</v-drag>
 
 <!-- Card 2 -->
-<div class="px-4 py-2 bg-green-50 rounded-lg border-l-4 border-green-500">
+<v-drag pos="2">
+<div class="px-4 py-1 bg-green-50 rounded-lg border-l-4 border-green-500">
   <div class="flex items-center justify-center space-x-2">
-    <span class="text-xl">🔧</span>
-    <h3 class="!text-base !font-bold !text-green-700">2. 梳理资源</h3>
+    <h3 class="!font-bold !text-green-700">🔧 2. 梳理资源</h3>
   </div>
-  <p class="text-center !text-sm text-gray-600 mt-1">实现它，需要哪些已知和未知？</p>
+  <div class="!text-sm text-gray-600">智能集成，告别"造轮子"。利用现有生态资源(RAG技术)，在规划阶段即对接开发工具，优化实现路径。</div>
 </div>
+</v-drag>
 
 <!-- Card 3 -->
-<div class="px-4 py-2 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+<v-drag pos="3">
+<div class="px-4 py-1 bg-purple-50 rounded-lg border-l-4 border-purple-500">
   <div class="flex items-center justify-center space-x-2">
-    <span class="text-xl">📋</span>
-    <h3 class="!text-base !font-bold !text-purple-700">3. 生成规划</h3>
+    <h3 class="!font-bold !text-purple-700">📋 3. 输出文档</h3>
   </div>
-  <p class="text-center !text-sm text-gray-600 mt-1">第一步的行动路径是什么？</p>
+  <div class="!text-sm text-gray-600">自动生成"施工图"，沉淀资产。自主整合项目信息或含金量数据结构，逐日反之等细节的详细设计文档。</div>
 </div>
+</v-drag>
 </div>
 
 </div>
@@ -298,22 +313,24 @@ title: "回到原点：GTPlanner"
 
 ---
 layout: title-content
-title: "理论的实践"
+title: GTplanner的设计思考
 ---
 
-<div class="flex items-center justify-center h-full">
-<div class="w-full max-w-5xl">
-<div class="text-center mb-8">
-<h2 class="text-2xl font-bold mb-4">眼见为实</h2>
-<p class="text-lg text-gray-600">这些思考并非空想，我们已经将这套原则应用于具体场景</p>
-<p class="text-lg text-gray-600">[视频placeholder]</p>
-</div>
-</div>
+
+<div class="text-center">
+<h2 class="!text-lg !font-bold !mb-1 text-gray-800">回顾：Agent = 流程 (Flow) + 上下文 (Context)</h2>
+<p class="!text-sm text-gray-600 !mb-2">  </p>
 </div>
 
-<!--
-演讲者说: "这些思考并非空想。在内部，我们已经将这套原则应用于一些具体的场景。例如金融投研和医疗报告的解读。这些实践帮助我们验证、也修正了我们的想法。它们证明了，回归本质的规划，在真实世界中是可行且有价值的。"
--->
+> 
+> Nothing Complicated, Just done things right.
+
+**GTplanner的Agent设计哲学** = 极简的Agent框架 + 适当的上下文工程
+
+
+
+- Agent框架：主框架^[pocketflow] + 
+- 上下文工程：精心挑选的高质量可用工具 + 简洁的指令 + 只保留相关的历史记录
 
 ---
 layout: section-divider
@@ -439,29 +456,20 @@ title: "关于我们"
 ---
 layout: title-content
 title: "期待交流"
+dragPos:
+  "1": 368,1,176,56
+  "2": 84,62,742,443
+  "3": 73,363,303,69
 ---
 
 <div class="flex items-center justify-center h-full">
 <div class="text-center w-full max-w-5xl">
+<v-drag pos="1">
 <h2 class="text-lg font-bold mb-6">加入我们的社区</h2>
+</v-drag>
 
-<div class="grid grid-cols-4 gap-4 mb-6">
-<div class="p-4 bg-gray-900 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-<div class="text-3xl mb-3">📱</div>
-<h3 class="text-base font-bold mb-2">GitHub</h3>
-<div class="w-16 h-16 mx-auto bg-white rounded flex items-center justify-center">
-<span class="text-xs text-gray-500">QR Code</span>
-</div>
-</div>
-
-<div class="p-4 bg-indigo-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-<div class="text-3xl mb-3">💬</div>
-<h3 class="text-base font-bold mb-2">Discord</h3>
-<div class="w-16 h-16 mx-auto bg-white rounded flex items-center justify-center">
-<span class="text-xs text-gray-500">QR Code</span>
-</div>
-</div>
-
+<v-drag pos="2">
+<div class="grid grid-cols-2 gap-4 mb-6">
 <div class="p-4 bg-green-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
 <div class="text-3xl mb-3">📱</div>
 <h3 class="text-base font-bold mb-2">微信群</h3>
@@ -471,17 +479,28 @@ title: "期待交流"
 </div>
 
 <div class="p-4 bg-blue-600 text-white rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-<div class="text-3xl mb-3">🌐</div>
-<h3 class="text-base font-bold mb-2">官网</h3>
+<div class="text-3xl mb-3">💬</div>
+<h3 class="text-base font-bold mb-2">飞书群</h3>
 <div class="w-16 h-16 mx-auto bg-white rounded flex items-center justify-center">
 <span class="text-xs text-gray-500">QR Code</span>
 </div>
 </div>
 </div>
+</v-drag>
 
-<div class="mt-6">
-<p class="text-lg font-semibold text-gray-800">谢谢大家</p>
+<v-drag pos="3">
+<div class="flex flex-col space-y-3 text-sm text-gray-600 max-w-xs mx-auto">
+<div class="flex items-center space-x-2">
+  <span class="text-xl"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="size-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path></svg></span>
+  <a href="https://github.com/opensqz/gtplanner" > https://github.com/OpenSQZ/GTplanner</a>
 </div>
+<div class="flex items-center space-x-2">
+  <span class="text-xl">🌐</span>
+  <a href="https://the-agent-builder.com"> https://the-agent-builder.com</a>
+</div>
+</div>
+</v-drag>
+
 </div>
 </div>
 
