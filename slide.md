@@ -13,6 +13,7 @@ drawings:
 transition: 
 mdc: true
 layout: cover
+preload: true
 ---
 
 # GTPlanner
